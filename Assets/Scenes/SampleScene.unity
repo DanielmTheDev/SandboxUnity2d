@@ -959,6 +959,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1755012540945230098, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1798403191616296585, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25303712
