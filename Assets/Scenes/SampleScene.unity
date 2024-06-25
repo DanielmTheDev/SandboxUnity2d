@@ -615,6 +615,18 @@ MonoBehaviour:
   m_SolverEditorData:
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
+--- !u!114 &1874896046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874896034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf800b9361031b49b1fd4a86082d520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1902976496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1826007302319161890, guid: b15e8013968bca24d904b94dd02f50ae, type: 3}
@@ -686,6 +698,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &2064741255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064741251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c975ac075c55e2943a4d4599ea6e70b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4928339699006642378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -790,6 +814,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7703285134177108515, guid: b15e8013968bca24d904b94dd02f50ae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1874896042}
+    - targetCorrespondingSourceObject: {fileID: 7703285134177108515, guid: b15e8013968bca24d904b94dd02f50ae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1874896046}
     - targetCorrespondingSourceObject: {fileID: 2856006483771380872, guid: b15e8013968bca24d904b94dd02f50ae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 973576145}
@@ -885,6 +912,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5760137990317212655, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2064741254}
+    - targetCorrespondingSourceObject: {fileID: 5760137990317212655, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064741255}
   m_SourcePrefab: {fileID: 100100000, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
 --- !u!4 &8174309653660632889 stripped
 Transform:
