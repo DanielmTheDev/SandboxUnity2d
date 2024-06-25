@@ -8,25 +8,19 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     private static readonly int Smack = Animator.StringToHash("Smack");
-    private const float SMACK_DELAY = 0.5f;
-    private float _nextSmackAllowedTime;
+
+    private CooldownExecutor _smashExecutor;
     private Vector2 _moveInput;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        _smashExecutor = new(0.5f, () => animator.SetTrigger(Smack));
     }
 
     public void OnMove(InputAction.CallbackContext context) => _moveInput = context.ReadValue<Vector2>();
 
-    public void OnSmack()
-    {
-        if (_nextSmackAllowedTime <= Time.time)
-        {
-            _nextSmackAllowedTime = Time.time + SMACK_DELAY;
-            animator.SetTrigger(Smack);
-        }
-    }
+    public void OnSmack() => _smashExecutor.Execute();
 
     private void Update()
     {
