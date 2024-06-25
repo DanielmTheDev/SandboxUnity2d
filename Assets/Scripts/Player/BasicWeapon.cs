@@ -1,4 +1,4 @@
-using MageQueen;
+using Common;
 using UnityEngine;
 
 public class BasicWeapon : MonoBehaviour

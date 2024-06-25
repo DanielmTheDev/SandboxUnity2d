@@ -1,4 +1,4 @@
-﻿namespace MageQueen
+﻿namespace Common
 {
     public interface IHittable
     {
