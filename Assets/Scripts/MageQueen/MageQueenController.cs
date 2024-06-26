@@ -63,7 +63,6 @@ namespace MageQueen
                 _isMovingCrosshair = false;
                 yield return new WaitForSeconds(1f);
 
-                // Shoot projectile
                 ShootProjectile();
 
                 crossHair.gameObject.SetActive(false);

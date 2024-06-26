@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Animator))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IHittable
 {
     public float moveSpeed = 10f;
     private Animator _animator;
@@ -27,5 +27,10 @@ public class PlayerController : MonoBehaviour
     {
         var move = new Vector3(_moveInput.x, _moveInput.y, 0) * (moveSpeed * Time.deltaTime);
         transform.position += move;
+    }
+
+    public void OnHit()
+    {
+        Debug.Log("Hit");
     }
 }

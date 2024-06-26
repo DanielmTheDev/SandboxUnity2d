@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 899574652098524224}
   - component: {fileID: 2187545048363655057}
   - component: {fileID: 8267101668083329545}
+  - component: {fileID: -7809342232679567746}
   m_Layer: 0
   m_Name: WitchBall
   m_TagString: Untagged
@@ -148,3 +149,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.12
+--- !u!114 &-7809342232679567746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4649775246343637142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c975ac075c55e2943a4d4599ea6e70b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
