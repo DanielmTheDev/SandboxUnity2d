@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public Animator animator;
+    private Animator _animator;
 
     private static readonly int Smack = Animator.StringToHash("Smack");
 
@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        _smashExecutor = new(0.5f, () => animator.SetTrigger(Smack));
+        _animator = GetComponent<Animator>();
+        _smashExecutor = new(0.5f, () => _animator.SetTrigger(Smack));
     }
 
     public void OnMove(InputAction.CallbackContext context) => _moveInput = context.ReadValue<Vector2>();
