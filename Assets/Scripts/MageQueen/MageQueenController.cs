@@ -10,6 +10,8 @@ namespace MageQueen
     public class MageQueenController : MonoBehaviour, IHittable
     {
         public Transform crossHair;
+        public GameObject witchBall;
+        public Transform witchBallSpawn;
         public Transform playerCharacter;
 
         // Crosshair movement parameters
@@ -27,7 +29,7 @@ namespace MageQueen
         private void Start()
         {
             _animator = GetComponent<Animator>();
-            _getHitExecutor = new(1, () => _animator.SetTrigger(GetHit));
+            _getHitExecutor = new(2, () => _animator.SetTrigger(GetHit));
             StartCoroutine(AttackSequence());
         }
 
@@ -73,11 +75,11 @@ namespace MageQueen
 
         private void ShootProjectile()
         {
-            // Implement your projectile shooting logic here
-            Debug.Log("Shooting projectile at " + crossHair.position);
-            // Example: Instantiate a projectile prefab at the crosshair position
-            // GameObject projectile = Instantiate(projectilePrefab, crossHair.position, Quaternion.identity);
-            // projectile.GetComponent<Rigidbody2D>().velocity = (playerCharacter.position - crossHair.position).normalized * projectileSpeed;
+            var projectile = Instantiate(witchBall, witchBallSpawn.position, Quaternion.identity);
+            var rigidBody = projectile.GetComponent<Rigidbody2D>();
+
+            rigidBody.velocity = (crossHair.position - transform.position).normalized * 10;
+            rigidBody.angularVelocity = -360;
         }
 
         public void OnHit() => _getHitExecutor.Execute();
