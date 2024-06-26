@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 982665216}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: World
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -592,22 +592,6 @@ PrefabInstance:
     - target: {fileID: 5577636741979649347, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7628569199608520937, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
-      propertyPath: m_Size.x
-      value: 15.1422415
-      objectReference: {fileID: 0}
-    - target: {fileID: 7628569199608520937, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
-      propertyPath: m_Size.y
-      value: 14.614683
-      objectReference: {fileID: 0}
-    - target: {fileID: 7628569199608520937, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
-      propertyPath: m_Offset.x
-      value: -3.3765779
-      objectReference: {fileID: 0}
-    - target: {fileID: 7628569199608520937, guid: 01f5f07460902a443884ae06612e1e8c, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.8926573
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

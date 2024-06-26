@@ -1,4 +1,4 @@
-﻿namespace Common
+﻿namespace Combat
 {
     public interface IHittable
     {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2187545048363655057}
   - component: {fileID: 8267101668083329545}
   - component: {fileID: -7809342232679567746}
+  - component: {fileID: 8897915657588439485}
   m_Layer: 0
   m_Name: WitchBall
   m_TagString: Untagged
@@ -161,3 +162,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c975ac075c55e2943a4d4599ea6e70b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8897915657588439485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4649775246343637142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 684d657fa05dd724bb9a3fff5e6b47a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffectPrefab: {fileID: 5186718453119890215, guid: e29b0201d18048040a2f52702f6df9ce, type: 3}
